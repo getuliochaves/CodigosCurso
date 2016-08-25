@@ -1,0 +1,6 @@
+.linha1024{width:1024px;margin:0 auto;}
+.linha940{width:940px;margin:0 auto;}
+.bordaredondabranca{border:10px solid #FFF;border-radius:5px;}
+body, html{overflow:hidden !important;}
+
+body{background: url(https://s20.postimg.org/769zgyzkd/bg_rapidez.jpg) center top no-repeat; background-attachment: fixed !important; background-repeat: no-repeat !important; background-size: cover !important; -moz-background-size: cover !important; -webkit-background-size: cover !important; -o-background-size: cover !important; }
