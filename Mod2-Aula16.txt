@@ -1,0 +1,41 @@
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+ <script>
+$a = jQuery.noConflict();
+$a(function(){
+            function onScrollInit( items, trigger ) {
+                items.each( function() {
+                var osElement = $a(this),
+                    osAnimationClass = osElement.attr('data-os-animation'),
+                    osAnimationDelay = osElement.attr('data-os-animation-delay');
+                  
+                    osElement.css({
+                        '-webkit-animation-delay':  osAnimationDelay,
+                        '-moz-animation-delay':     osAnimationDelay,
+                        'animation-delay':          osAnimationDelay
+                    });
+
+                    var osTrigger = ( trigger ) ? trigger : osElement;
+                    
+                    osTrigger.waypoint(function() {
+                        osElement.addClass('animated').addClass(osAnimationClass);
+                        },{
+                            triggerOnce: true,
+                            offset: '90%'
+                    });
+                });
+            }
+
+            onScrollInit( $a('.anima') );
+            onScrollInit( $a('.staggered-animation'), $a('.staggered-animation-container') );
+});
+</script>
+
+
+
+<style>
+.anima{opacity: 0;}
+.anima.animated{opacity: 1;}   
+</style>
+
+<div class="anima" data-os-animation="fadeInLeft" data-os-animation-delay="1s">
+</div>
