@@ -1,0 +1,88 @@
+<style>
+
+#btCt{
+	width:700px;
+	margin:0 auto;
+	padding:10px;
+	margin-top:10px;
+}
+
+#comprar{
+display:none;
+margin:0 auto;
+
+}
+
+#tempo{
+background-image:url(http://optimizepressacademy.com/wp-content/uploads/2014/03/conta-tempo1.png);
+	width:400px;
+	height:116px;
+	margin:0 auto;
+}
+
+.tempo1{
+	width:400px;
+	height:56px;
+	float:left;
+	line-height:120px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:50px;
+	font-weight:bold;
+	color:#000;
+	text-align:center;
+	margin-left:40px;
+	}
+
+#minutos{	
+	height:56px;
+	float:left;
+	text-align:center;
+}
+
+.divisao{
+	height:56px;
+	float:left;
+}
+
+#segundos{	
+	height:56px;
+	float:left;
+	text-align:center;
+}
+
+#horas{	
+	height:56px;
+	float:left;
+	text-align:center;
+}
+
+</style>
+
+
+<script type="text/javascript">
+<!--
+function escondeDiv() {
+document.getElementById("comprar").style.display = "block";
+}
+
+function escondeTempo() {
+document.getElementById("tempo").style.display = "none";
+}
+ var minutos = 0;
+  var segundos = 3;
+ 
+ function chamar(){
+	 if(segundos>0){document.getElementById('segundos').innerHTML = --segundos;} 
+	  if(segundos==0 && minutos>0){document.getElementById('minutos').innerHTML = --minutos;
+	  segundos = 60;
+	  }
+	  
+	   if(minutos==0 && segundos==0){setTimeout("escondeDiv()",1000);
+	   setTimeout("escondeTempo()",1000);
+	   
+	   }
+}
+setInterval("chamar();", 1000);
+
+//-->
+</script>
