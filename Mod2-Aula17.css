@@ -1,0 +1,6 @@
+.linha1024{width:1024px;	 margin:0 auto;}
+.linha940{ width:940px; margin:0 auto; }
+.anima{opacity: 0;}
+.anima.animated{opacity: 1;} 
+.featured-panel-style-2 .floating-featured-panel{float:left;left:180px;}
+.featured-panel-style-2 .floating-featured-panel{ background:none !important;	background-color:rgba(0,0,0,0.8) !important; padding:20px !important; }
